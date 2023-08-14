@@ -2,11 +2,202 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
 
-div {
-  background-color: red;
-  color: aqua;
+a {
+  text-decoration: none !important;
+  color: #4c4c4c;
+}
+
+ul > li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Pe-icon-7-stroke";
+  src: url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.eot");
+  src: url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.woff") format("woff"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.svg#Pe-icon-7-stroke") format("svg");
+}
+body {
+  height: 1250vh;
+}
+
+.jsc-hover-red:hover {
+  color: #fb5d5d !important;
+}
+
+.jsc-header-top {
+  background-color: #242424;
+}
+.jsc-header-top .content {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #b5b5b5;
+}
+
+.jsc-header-bottom .jsc-sticky {
+  box-shadow: 2px 4px 8px rgba(51, 51, 51, 0.25);
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: stick 2s;
+}
+
+.jsc-sticky-items {
+  padding-inline: 15px;
+}
+
+@keyframes stick {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.jsc-header-actions {
+  display: flex;
+  place-items: center;
+}
+.jsc-header-actions .login {
+  color: #fb5d5d !important;
+}
+.jsc-header-actions a:not(:first-child) {
+  margin-left: 20px;
+  display: inline-block;
+  line-height: 50px;
+}
+.jsc-header-actions a:hover .jsc-icon::before {
+  color: #fb5d5d;
+  font-weight: 600;
+}
+.jsc-header-actions .jsc-icon::before {
+  font-family: "Pe-icon-7-stroke";
+  font-style: normal;
+  font-size: 25px;
+  color: #4c4c4c;
+}
+.jsc-header-actions .jsc-icon-search::before {
+  content: "\e618";
+}
+.jsc-header-actions .jsc-icon-heart::before {
+  content: "\e642";
+}
+.jsc-header-actions .jsc-icon-shopbag::before {
+  content: "\e615";
+}
+.jsc-header-actions .jsc-icon-menu::before {
+  font-size: 30px;
+  content: "\e636";
+}
+.jsc-header-actions .jsc-icon-menu {
+  display: none;
+}
+
+.jsc-navbar > ul > li:not(:first-child) {
+  margin-left: 50px;
+}
+.jsc-navbar > ul {
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.jsc-navbar > ul > li {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+.jsc-navbar > ul > li > a {
+  text-transform: uppercase;
+  line-height: 99px;
+  font-weight: 600;
+  color: #4c4c4c !important;
+}
+.jsc-navbar > ul .jsc-dropdown-li > a::after {
+  content: "\e688";
+  font-family: "Pe-icon-7-stroke";
+  font-style: normal;
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .jsc-navbar {
+    display: none !important;
+  }
+  #stickyBar {
+    padding-block: 15px;
+  }
+  .jsc-icon-menu {
+    display: inline-block !important;
+  }
+}
+.jsc-dropdown-li {
+  position: relative;
+}
+
+.jsc-downbar-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 3.76px 0.24px rgba(0, 0, 0, 0.15);
+  padding: 20px 0 30px 30px;
+  visibility: hidden;
+  display: none;
+}
+
+#shopId .jsc-downbar-menu {
+  left: -159px;
+}
+
+.jsc-dropdown-li:hover .jsc-downbar-menu {
+  visibility: visible;
+  display: block;
+}
+
+.list-item > ul > .title {
+  font-weight: 600;
+  color: #4c4c4c;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.list-item .line {
+  border-bottom: 1px solid #ebebeb;
+  margin-right: -30px !important;
+}
+.list-item > ul {
+  margin: 0;
+  padding: 0;
+  margin-right: 30px !important;
+  padding-right: 15px;
+}
+.list-item li {
+  width: -moz-max-content;
+  width: max-content;
+}
+.list-item li a {
+  line-height: 30px;
+  color: #1d1d1d;
+  font-size: 14px;
+}
+
+.jsc-downbar-menu .list-photo {
+  margin-top: 15px;
+  margin-left: -12px;
+}
+.jsc-downbar-menu .list-photo .images {
+  padding-right: 30px;
+}
+.jsc-downbar-menu .list-photo .images > img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

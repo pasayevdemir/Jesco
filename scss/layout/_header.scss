@@ -1,0 +1,89 @@
+//import scss
+@use '../abstarcts/_variables' as color;
+
+//Header
+.jsc-header-top {
+    background-color: color.$jsc-bg-dark-24;
+    .content {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 50px;
+        color: color.$jsc-color-gray-b5;
+    }
+}
+
+.jsc-header-bottom {
+    .jsc-sticky {
+        // background-color: wheat;
+        box-shadow: 2px 4px 8px rgba(51, 51, 51, 0.25);
+        width: 100%;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: stick 2s;
+}
+
+.jsc-sticky-items{
+    padding-inline: 15px;
+}
+
+@keyframes stick {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.jsc-header-actions {
+    display: flex;
+    place-items: center;
+ 
+    .login{
+        color: color.$jsc-color-red-5d !important;
+    }
+
+    a:not(:first-child) {
+        margin-left: 20px;
+        display: inline-block;
+        line-height: 50px;
+    }
+    a:hover .jsc-icon::before{
+        color: color.$jsc-color-red-5d;
+        font-weight: 600;
+    }
+
+    .jsc-icon::before {
+        font-family: 'Pe-icon-7-stroke';
+        font-style: normal;
+        font-size: 25px;
+        color: color.$jsc-color-gray-4c;
+    }
+
+    .jsc-icon-search::before {
+        content: '\e618';
+    }
+
+    .jsc-icon-heart::before {
+        content: '\e642';
+    }
+
+    .jsc-icon-shopbag::before {
+        content: '\e615';
+    }
+
+    .jsc-icon-menu::before{
+        font-size: 30px;
+        content: '\e636';
+    }
+
+    .jsc-icon-menu{
+        display: none;
+    }
+}

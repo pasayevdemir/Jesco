@@ -1,0 +1,68 @@
+@use '../abstarcts/_variables' as color;
+
+.jsc-dropdown-li {
+    position: relative;
+}
+
+.jsc-downbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 3.76px 0.24px rgba(0, 0, 0, 0.15);
+    padding:  20px 0 30px 30px;
+    visibility: hidden; 
+    display: none;
+}
+
+#shopId .jsc-downbar-menu{
+    left: -159px;
+}
+
+.jsc-dropdown-li:hover .jsc-downbar-menu {
+    visibility: visible;
+    display: block;
+}
+
+.list-item {
+
+    >ul > .title {
+        font-weight: 600;
+        color: color.$jsc-color-gray-4c;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    .line{
+        border-bottom: 1px solid #ebebeb; 
+        margin-right: -30px !important;
+    }
+
+    >ul {
+        margin: 0;
+        padding: 0;
+        margin-right: 30px !important;
+        padding-right: 15px;
+    }
+
+
+    li {
+        width: max-content;
+        a {
+            line-height: 30px;
+            color: color.$jsc-color-gray-1d;
+            font-size: 14px;
+        }
+    }
+}
+
+.jsc-downbar-menu .list-photo{
+    margin-top: 15px;
+    margin-left: -12px;
+    .images{
+        padding-right: 30px;
+    }
+    .images > img{
+        width: 100%;
+    }
+}

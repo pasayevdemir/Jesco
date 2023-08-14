@@ -1,4 +1,12 @@
-div{
-    background-color: red;
-    color: aqua;
+@use '../abstarcts/_variables' as color;
+
+body {
+    height: 1250vh;
 }
+
+.jsc-hover-red:hover{
+    color: color.$jsc-color-red-5d !important;
+}
+
+
+

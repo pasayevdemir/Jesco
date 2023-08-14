@@ -1,7 +1,15 @@
+//Abstracts
 @use 'scss/abstarcts/_variables' as variables;
 
+//Base
 @use 'scss/base/reset' as reset;
-
 @use 'scss/base/typography' as typography;
 
+
+//Pages
 @use 'scss/pages/home' as home;
+
+//Layout
+@use 'scss/layout/header' as header;
+@use 'scss/layout/navbar' as navbar;
+@use 'scss/layout/downbar' as downbar;
