@@ -26,7 +26,7 @@ ul > li {
 }
 
 .jsc-slider-page {
-  height: 100vh;
+  height: 160vh;
   overflow: hidden;
   background-color: #cebdb5;
 }
@@ -85,7 +85,7 @@ ul > li {
 }
 .jsc-slider-page .jsc-left-slider {
   position: absolute;
-  bottom: 150px;
+  bottom: -80px;
   animation: textUp 3s 1s ease-out infinite;
 }
 .jsc-slider-page .jsc-left-slider .jsc-left-slider-offer-text h5 {
@@ -132,13 +132,11 @@ ul > li {
 .jsc-right-slider .jsc-right-slider-image {
   position: absolute;
   top: 80px;
-  z-index: 0;
 }
 .jsc-right-slider .jsc-right-slider-product-info {
   position: absolute;
   right: 70px;
   top: 500px;
-  z-index: 12432 !important;
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
