@@ -1,0 +1,20 @@
+//mobil close button
+@use '../abstarcts/_variables' as color;
+
+.jsc-mobil{
+    &__btn-close {
+        position: absolute;
+        top: -5px;
+        right: 30px;
+    }
+
+    &__btn-close::after {
+        content: '\e680';
+        font-size: 40px;
+        background-color: color.$jsc-color-red-5d;
+        color: white;
+        border-radius: 100%;
+        font-family: 'Pe-icon-7-stroke';
+        font-style: normal;
+    }
+}

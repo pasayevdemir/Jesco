@@ -13,3 +13,9 @@
 @use 'scss/layout/header' as header;
 @use 'scss/layout/navbar' as navbar;
 @use 'scss/layout/downbar' as downbar;
+@use 'scss/layout/mobilnav' as mobilnav;
+
+
+//Components
+@use 'scss/components/carousel' as carousel;
+@use 'scss/components/buttons' as buttons;

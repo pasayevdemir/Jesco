@@ -43,20 +43,22 @@
 
 .jsc-header-actions {
     display: flex;
-    place-items: center;
+    align-items: center;
+    justify-content: end;
  
     .login{
         color: color.$jsc-color-red-5d !important;
     }
-
-    a:not(:first-child) {
+    a{
         margin-left: 20px;
-        display: inline-block;
-        line-height: 50px;
     }
-    a:hover .jsc-icon::before{
+
+    .jsc-icon:hover::before{
         color: color.$jsc-color-red-5d;
         font-weight: 600;
+    }
+    .jsc-icon{
+        display: inline;
     }
 
     .jsc-icon::before {
@@ -79,7 +81,7 @@
     }
 
     .jsc-icon-menu::before{
-        font-size: 30px;
+        font-size: 27px;
         content: '\e636';
     }
 

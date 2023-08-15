@@ -1,0 +1,59 @@
+//Carousel
+
+.jsc-section-carousel {
+    background-color: antiquewhite;position: relative;
+}
+.jsc-carousel{
+    
+}
+.jsc-control-icon {
+    & i {
+        font-family: "Pe-icon-7-stroke";
+        font-size: 40px;
+        font-style: normal;
+    }
+
+    &__next::before {
+        content: '\e686';
+    }
+
+    &__prevous::before {
+        content: '\e684';
+    }
+}
+
+.jsc-slide {
+    position: absolute;
+    
+    
+    background-color: aquamarine;
+    & .row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {}
+
+    &__image {
+        display: flex;
+    }
+
+    &__image img {
+        max-width: 100%;
+        width: 80%;
+        margin-block: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .jsc-slide {
+        &__image {
+            justify-content: center;
+        }
+
+        &__image img {
+            width: 60% !important;
+            margin-block: auto;
+        }
+    }
+}

@@ -2,7 +2,6 @@
 @use '../abstarcts/_variables' as color;
 
 .jsc-navbar {
-
     >ul>li:not(:first-child){
         margin-left: 50px;
     }
@@ -17,6 +16,7 @@
             display: flex;
             align-items: center;
             > a {
+                font-size: 14px;
                 text-transform: uppercase;
                 line-height: 99px;
                 font-weight: 600;
@@ -37,14 +37,46 @@
 
 
 @media (max-width: 992px) {
-    .jsc-navbar{
+    #navbarId {
         display: none !important;
     }
+
     #stickyBar{
         padding-block: 15px;
+        & .row {
+            justify-content: space-between !important;
+        }
     }
-
+    
     .jsc-icon-menu{
         display: inline-block !important;
+    }
+
+
+    .jsc-header{
+        position: relative;
+    }
+
+    // .jsc-sidenav-mobil{
+    //     left: 0px !important;
+    // }
+    
+}
+
+@media (max-width: 576px){
+    .jsc-icon::before{
+        font-size: 22px !important;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 425px){
+    #stickyBar .row {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    
+    .jsc-sidenav-mobil{
+        width: 300px;
     }
 }

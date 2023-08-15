@@ -1,0 +1,133 @@
+@use '../abstarcts/_variables' as color;
+
+.jsc-sidenav-mobil {
+    position: fixed;
+    left: -400px;
+    width: 350px;
+    height: 100vh;
+    z-index: 2;
+    padding: 50px 30px;
+    background-color: #fff;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    transition: all 0.5s;
+
+    .plus-icon>a,
+    .plus-icon>span {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .plus-icon>a::after,
+    .plus-icon>span::after {
+        content: '\e618';
+        font-family: 'Pe-icon-7-stroke';
+        font-style: normal;
+        color: color.$jsc-color-gray-4c;
+
+    }
+
+    a {
+        display: flex;
+
+        color: color.$jsc-color-gray-47;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li:hover>a,
+    li:hover>span {
+        color: color.$jsc-color-red-5d;
+    }
+}
+
+.jsc-mobil-list {
+    padding: 0;
+
+    &-li>a {
+        display: block;
+        padding-block: 10px;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+
+    &-li>a,
+    .jsc-mobil-downbar span,
+    .jsc-mobil-downbar a {
+        border-top: 1px solid #eee;
+    }
+
+    &-li>a:last-child {
+        border-bottom: 1px solid #eee;
+    }
+
+
+
+    // li:hover .jsc-mobil-downbar,
+    // .shop-down-list:hover .jsc-mobil-downbar-shop {
+    //     display: block;
+    //     cursor: pointer;
+    // }
+
+    & .jsc-mobil-downbar,
+    .shop-down-list ul {
+        display: none;
+    }
+}
+
+.jsc-mobil-downbar {
+    span {
+        font-weight: 700;
+        padding-left: 10px !important;
+    }
+
+    a,
+    span {
+        display: block;
+        font-size: 14px;
+        padding: 10px 0 10px 15px;
+        width: 100%;
+    }
+
+    .list-item ul,
+    .list-item {
+        padding: 0;
+        width: 100%;
+    }
+
+    .list-item li {
+        width: 100%;
+    }
+}
+
+
+.jsc-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    & a {
+        position: relative;
+        display: inline-block;
+        min-width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: color.$jsc-color-red-5d;
+        border-radius: 100%;
+    }
+
+    & a i {
+        position: absolute;
+        font-size: 14px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+
+    & a:hover  {
+        transition: all 0.5s ease;
+        background-color: black;
+    }
+}
