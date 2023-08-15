@@ -1,0 +1,17 @@
+.jsc-shop-button{
+    padding: 20px 40px;
+    border:none;
+    border-radius: 50px;
+    background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+    width: max-content;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+    span{
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    &:hover{
+        box-shadow: 0px 17px 72px -15px rgba(0,0,0,0.75);
+    }
+}

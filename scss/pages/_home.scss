@@ -1,12 +1,138 @@
 @use '../abstarcts/_variables' as color;
 
-body {
-    height: 1250vh;
-}
+// body {
+//     height: 1250vh;
+// }
 
 .jsc-hover-red:hover{
     color: color.$jsc-color-red-5d !important;
 }
+.jsc-slider-page {
+    height: 100vh;
+    overflow: hidden;
+    background-color: color.$jsc-bg-orange-ce;
+    #right{
+        position: absolute;
+        right: 0;
+        top: 500px;
+        i{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 50%;
+            color: black;
+            cursor: pointer;
+            transition: .3s;
+            opacity: 0;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            padding: 25px;
+        }
+    }
+    #left{
+        position: absolute;
+        top: 500px;
+        i{
+            background-color: #fff;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            padding: 25px;
+            border-radius: 50%;
+            color: black;
+            cursor: pointer;
+            transition: .3s;
+            opacity: 0;
+        }
+    }
+    &:hover{
+        #left{
+            left: 30px;
+            i{
+                opacity: 1;
+                transition: .3s;
+                transform: translate(30px);
+            }
+        }
+    }
+    &:hover{
+        #right{
+            i{
+                opacity: 1;
+                transition: .3s;
+                transform: translate(-30px);
+            }
+        }
+    }
+    .jsc-left-slider{
+        position: absolute;
+        bottom: 150px;
+        animation: textUp 3s 1s ease-out infinite;
+        .jsc-left-slider-offer-text{
+            h5{
+                margin: 0;
+                font-size: 16px;
+            }
+            div{
+                margin-right: 15px;
+                border: none;
+                height: 3px;
+                width: 30px;
+                background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+            }
+        }
+        .jsc-left-slider-sale-text{
+            color: color.$jsc-bg-dark-39;
+            h1{
+                font-size: 70px;
+                font-weight: 200;
+            }
+            span{
+                font-size: 70px;
+                font-weight: bold;
+            }
+        }
+        // .jsc-shop-btn{
+  
+        // }
+    }
+}
+@keyframes textUp {
+    0%{
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-
-
+.jsc-right-slider{
+    position: relative;
+    animation: textUp 3s 1s ease-out infinite;
+    .jsc-right-slider-image{
+        position: absolute;
+        top: 80px;
+        z-index: 0;
+    }
+    .jsc-right-slider-product-info{
+        position: absolute;
+        right: 70px;
+        top: 500px;
+        z-index: 12432 !important;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+    }
+}

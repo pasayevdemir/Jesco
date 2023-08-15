@@ -21,12 +21,127 @@ ul > li {
   src: url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.eot");
   src: url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.woff") format("woff"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/7218a2da5a03f622ca18085806382043.svg#Pe-icon-7-stroke") format("svg");
 }
-body {
-  height: 1250vh;
-}
-
 .jsc-hover-red:hover {
   color: #fb5d5d !important;
+}
+
+.jsc-slider-page {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #cebdb5;
+}
+.jsc-slider-page #right {
+  position: absolute;
+  right: 0;
+  top: 500px;
+}
+.jsc-slider-page #right i {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.jsc-slider-page #left {
+  position: absolute;
+  top: 500px;
+}
+.jsc-slider-page #left i {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+}
+.jsc-slider-page:hover #left {
+  left: 30px;
+}
+.jsc-slider-page:hover #left i {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translate(30px);
+}
+.jsc-slider-page:hover #right i {
+  opacity: 1;
+  transition: 0.3s;
+  transform: translate(-30px);
+}
+.jsc-slider-page .jsc-left-slider {
+  position: absolute;
+  bottom: 150px;
+  animation: textUp 3s 1s ease-out infinite;
+}
+.jsc-slider-page .jsc-left-slider .jsc-left-slider-offer-text h5 {
+  margin: 0;
+  font-size: 16px;
+}
+.jsc-slider-page .jsc-left-slider .jsc-left-slider-offer-text div {
+  margin-right: 15px;
+  border: none;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+}
+.jsc-slider-page .jsc-left-slider .jsc-left-slider-sale-text {
+  color: #393939;
+}
+.jsc-slider-page .jsc-left-slider .jsc-left-slider-sale-text h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
+.jsc-slider-page .jsc-left-slider .jsc-left-slider-sale-text span {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+@keyframes textUp {
+  0% {
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.jsc-right-slider {
+  position: relative;
+  animation: textUp 3s 1s ease-out infinite;
+}
+.jsc-right-slider .jsc-right-slider-image {
+  position: absolute;
+  top: 80px;
+  z-index: 0;
+}
+.jsc-right-slider .jsc-right-slider-product-info {
+  position: absolute;
+  right: 70px;
+  top: 500px;
+  z-index: 12432 !important;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .jsc-header-top {
@@ -200,4 +315,23 @@ body {
 }
 .jsc-downbar-menu .list-photo .images > img {
   width: 100%;
+}
+
+.jsc-shop-button {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+  width: -moz-max-content;
+  width: max-content;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.jsc-shop-button span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.jsc-shop-button:hover {
+  box-shadow: 0px 17px 72px -15px rgba(0, 0, 0, 0.75);
 }/*# sourceMappingURL=main.css.map */
