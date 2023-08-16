@@ -219,6 +219,12 @@ ul > li {
   height: 70px;
   margin-right: 20px;
 }
+.jsc-feature-content .feature-cards-content .cards-image img {
+  transition: all 0.25s ease;
+}
+.jsc-feature-content .feature-cards-content .cards-image:hover img {
+  transform: scale(0.9);
+}
 .jsc-feature-content .feature-cards-content .cars-content h4 {
   color: #2e2e2e;
 }

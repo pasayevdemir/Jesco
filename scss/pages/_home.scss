@@ -236,16 +236,18 @@
 
 // Feature section start -->
 
-.jsc-feature-content{
+.jsc-feature-content {
     padding-bottom: 80px;
-    .feature-cards{
+
+    .feature-cards {
         border: 1px solid #e8e8e8;
         padding: 30px;
     }
 
-    .feature-cards-content{
+    .feature-cards-content {
         display: flex;
-        .cards-image{
+
+        .cards-image {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -254,15 +256,26 @@
             width: 70px;
             height: 70px;
             margin-right: 20px;
+            img{
+                transition: all 0.25s ease;
+            }
         }
-        .cars-content{
-            h4{
+
+        //hover
+        .cards-image:hover {
+            img {
+                transform: scale(0.9);
+            }
+        }
+
+        .cars-content {
+            h4 {
                 color: color.$jsc-color-gray-2e;
             }
-            span{
+
+            span {
                 color: color.$jsc-color-gray-84;
             }
-
         }
     }
 }
@@ -270,5 +283,3 @@
 // Feature section end -->
 
 //-----------------------------------
-
-
