@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesco - Fashoin eCommerce HTML Template</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
+
 <body>
     <header class="jsc-header">
 
@@ -263,11 +266,11 @@
 
     <section class="jsc-slider-page">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="jsc-slider d-flex flex-column ">
 
-                    <div class="jsc-left-slider d-flex flex-column justify-content-center">
+                <div class="jsc-slider-item d-xs-block d-sm-flex d-md-flex d-lg-flex justify-content-between active ">
 
+                    <div class="jsc-left-slider-item d-flex flex-column justify-content-center align-items-xs-center justify-content-xs-center">
                         <div class="jsc-left-slider-offer-text d-flex align-items-center">
                             <div></div>
                             <h5>OFFER 2021</h5>
@@ -276,18 +279,15 @@
                             <h1>SALE UP TO </h1> <span>50% OFF</span>
                         </div>
                         <div class="jsc-left-slider-button">
-                            <div class=".jsc-shop-btn jsc-shop-button"> <span>SHOP NOW </span><i class="fa-solid fa-basket-shopping"></i></div>
+                            <div class=".jsc-shop-btn jsc-shop-button"> <span>SHOP NOW </span><i
+                                    class="fa-solid fa-basket-shopping"></i></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-                    <div class="jsc-right-slider">
-
+                    <div class="jsc-right-slider-item">
                         <div class="jsc-right-slider-image">
                             <img src="images\slider-1.webp" alt="">
                         </div>
-
                         <div class="jsc-right-slider-product-info d-flex align-items-center gap-4">
                             <div class="jsc-right-slider-product-price ">
                                 <h5>Full Dress</h5>
@@ -300,13 +300,127 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="jsc-slider-item d-xs-block d-sm-flex d-md-flex d-lg-flex justify-content-between">
+
+                    <div class="jsc-left-slider-item d-flex flex-column justify-content-center">
+                        <div class="jsc-left-slider-offer-text d-flex align-items-center">
+                            <div></div>
+                            <h5>OFFER 2021</h5>
+                        </div>
+                        <div class="jsc-left-slider-sale-text">
+                            <h1>SALE UP TO </h1> <span>50% OFF</span>
+                        </div>
+                        <div class="jsc-left-slider-button">
+                            <div class=".jsc-shop-btn jsc-shop-button"> <span>SHOP NOW </span><i
+                                    class="fa-solid fa-basket-shopping"></i></div>
+                        </div>
+                    </div>
+
+                   <div class="jsc-right-slider-item">
+                    <div class="jsc-right-slider-image">
+                        <img src="images\slider-2.webp" alt="">
+                    </div>
+                    <div class="jsc-right-slider-product-info d-flex align-items-center gap-4">
+                        <div class="jsc-right-slider-product-price ">
+                            <h5>Full Dress</h5>
+                            <p>$21.00</p>
+                            <a href="#">Shop Now</a>
+                        </div>
+                        <div class="jsc-right-slider-product-image">
+                            <img src="images\display-image.webp" alt="">
+                        </div>
+                    </div>
+                  </div>
+             </div>
+            <div id="right"><i class="fa-solid fa-chevron-right"></i></div>
+            <div id="left"><i class="fa-solid fa-chevron-left"></i></div>
+
+
+
+
+            <!-- <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="jsc-left-slider d-flex flex-column justify-content-center">
+                        <div class="jsc-left-slider-item active">
+                            <div class="jsc-left-slider-offer-text d-flex align-items-center">
+                                <div></div>
+                                <h5>OFFER 2021</h5>
+                            </div>
+                            <div class="jsc-left-slider-sale-text">
+                                <h1>SALE UP TO </h1> <span>50% OFF</span>
+                            </div>
+                            <div class="jsc-left-slider-button">
+                                <div class=".jsc-shop-btn jsc-shop-button"> <span>SHOP NOW </span><i
+                                        class="fa-solid fa-basket-shopping"></i></div>
+                            </div>
+                        </div>
+                        <div class="jsc-left-slider-item d-flex flex-column justify-content-center">
+                            <div class="jsc-left-slider-offer-text d-flex align-items-center">
+                                <div></div>
+                                <h5>OFFER 2021</h5>
+                            </div>
+                            <div class="jsc-left-slider-sale-text">
+                                <h1>SALE UP TO </h1> <span>50% OFF</span>
+                            </div>
+                            <div class="jsc-left-slider-button">
+                                <div class=".jsc-shop-btn jsc-shop-button"> <span>SHOP NOW </span><i
+                                        class="fa-solid fa-basket-shopping"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    
+                    <div class="jsc-right-slider d-flex flex-column ">
+                        <div class="jsc-right-slider-item active">
+                            <div class="jsc-right-slider-image">
+                                <img src="images\slider-1.webp" alt="">
+                            </div>
+                            <div class="jsc-right-slider-product-info d-flex align-items-center gap-4">
+                                <div class="jsc-right-slider-product-price ">
+                                    <h5>Full Dress</h5>
+                                    <p>$21.00</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                                <div class="jsc-right-slider-product-image">
+                                    <img src="images\display-image.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="jsc-right-slider-item">
+                            <div class="jsc-right-slider-image">
+                                <img src="images\slider-2.webp" alt="">
+                            </div>
+                            <div class="jsc-right-slider-product-info d-flex align-items-center gap-4">
+                                <div class="jsc-right-slider-product-price ">
+                                    <h5>Full Dress</h5>
+                                    <p>$21.00</p>
+                                    <a href="#">Shop Now</a>
+                                </div>
+                                <div class="jsc-right-slider-product-image">
+                                    <img src="images\display-image.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right"><i class="fa-solid fa-chevron-right"></i></div>
+                <div id="left"><i class="fa-solid fa-chevron-left"></i></div>
+             </div>
+             </div> -->
         </div>
-        <div id="right"><i class="fa-solid fa-chevron-right"></i></div>
-        <div id="left"><i class="fa-solid fa-chevron-left"></i></div>
+        </div>
     </section>
 
-    
+
+
+    <section class="mt-5">
+        <div class="fdd" style="height: 100vh;"></div>
+    </section>
+
+
     <script src="app.js"></script>
 </body>
 
