@@ -1,5 +1,32 @@
+@media (min-width: 1200px) {
+    .jsc-banner-container {
+        padding-block: 100px;
+    }
+}
 
-@media (max-width: 992px){
+@media (max-width: 1200px) {
+    .jsc-feature-content {
+        .feature-cards{
+            padding: 20px;
+        }
+        .feature-cards-content {
+            .cars-content {
+                h4 {
+                    font-size: 20px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {}
+
+
+@media (max-width: 992px) {
     #navbarId {
         display: none !important;
     }
@@ -25,11 +52,12 @@
     //     left: 0px !important;
     // }
 
-    
+
 }
 
 
 @media (max-width: 992px) and (min-width: 768px) {
+
     //banner
     .jsc-banner-container {
         padding-block: 60px;
@@ -41,7 +69,7 @@
         .jsc-banner__content {
             padding: 30px 20px;
 
-            
+
         }
 
         .content-center {
@@ -57,10 +85,17 @@
     }
 }
 
-@media (max-width: 768px){
-    .jsc-banner-container{
-        .row{
+@media (max-width: 768px) {
+    .jsc-banner-container {
+        .row {
             gap: 30px !important;
+        }
+    }
+
+    .jsc-feature-content{
+        .jsc-col{
+            min-width: 100% !important;
+            padding-bottom: 30px;
         }
     }
 }

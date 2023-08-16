@@ -156,25 +156,22 @@
     }
 }
 
+//-----------------------------------
+
+// Banner section start -->
 
 .jsc-banner-container {
     padding-block: 80px;
 
-    & .row1 {
-        padding-bottom: 80px;
-    }
-
-    & .row2 {
-        height: 100px;
-        background-color: red;
-    }
     //hover start
-    .jsc-banner__items:hover{
+    .jsc-banner__items:hover {
         overflow: hidden;
+
         .jsc-banner__image img {
             transform: scale(1.1) rotate(3deg);
         }
     }
+
     //hover end
     .jsc-banner__items {
         position: relative;
@@ -183,7 +180,7 @@
         .jsc-banner__image img {
             width: 100%;
         }
-        
+
     }
 
     .jsc-banner__content {
@@ -232,3 +229,46 @@
 
     }
 }
+
+// Banner section end -->
+
+//-----------------------------------
+
+// Feature section start -->
+
+.jsc-feature-content{
+    padding-bottom: 80px;
+    .feature-cards{
+        border: 1px solid #e8e8e8;
+        padding: 30px;
+    }
+
+    .feature-cards-content{
+        display: flex;
+        .cards-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background: color.$jsc-bg-orange-grad;
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+        }
+        .cars-content{
+            h4{
+                color: color.$jsc-color-gray-2e;
+            }
+            span{
+                color: color.$jsc-color-gray-84;
+            }
+
+        }
+    }
+}
+
+// Feature section end -->
+
+//-----------------------------------
+
+

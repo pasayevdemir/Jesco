@@ -145,13 +145,6 @@ ul > li {
 .jsc-banner-container {
   padding-block: 80px;
 }
-.jsc-banner-container .row1 {
-  padding-bottom: 80px;
-}
-.jsc-banner-container .row2 {
-  height: 100px;
-  background-color: red;
-}
 .jsc-banner-container .jsc-banner__items:hover {
   overflow: hidden;
 }
@@ -204,6 +197,33 @@ ul > li {
   width: max-content;
   text-decoration: underline !important;
   color: #161616;
+}
+
+.jsc-feature-content {
+  padding-bottom: 80px;
+}
+.jsc-feature-content .feature-cards {
+  border: 1px solid #e8e8e8;
+  padding: 30px;
+}
+.jsc-feature-content .feature-cards-content {
+  display: flex;
+}
+.jsc-feature-content .feature-cards-content .cards-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+.jsc-feature-content .feature-cards-content .cars-content h4 {
+  color: #2e2e2e;
+}
+.jsc-feature-content .feature-cards-content .cars-content span {
+  color: #848484;
 }
 
 .jsc-header-top {
@@ -479,6 +499,22 @@ ul > li {
   background-color: black;
 }
 
+@media (min-width: 1200px) {
+  .jsc-banner-container {
+    padding-block: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .jsc-feature-content .feature-cards {
+    padding: 20px;
+  }
+  .jsc-feature-content .feature-cards-content .cars-content h4 {
+    font-size: 20px;
+  }
+  .jsc-feature-content .feature-cards-content .cars-content span {
+    font-size: 14px;
+  }
+}
 @media (max-width: 992px) {
   #navbarId {
     display: none !important;
@@ -516,6 +552,10 @@ ul > li {
 @media (max-width: 768px) {
   .jsc-banner-container .row {
     gap: 30px !important;
+  }
+  .jsc-feature-content .jsc-col {
+    min-width: 100% !important;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -595,7 +635,7 @@ ul > li {
   padding: 20px 40px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+  background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
   width: -moz-max-content;
   width: max-content;
   color: #FFF;
