@@ -57,7 +57,13 @@
     }
 }
 
-
+@media (max-width: 768px){
+    .jsc-banner-container{
+        .row{
+            gap: 30px !important;
+        }
+    }
+}
 
 @media (max-width: 576px) {
     .jsc-icon::before {
