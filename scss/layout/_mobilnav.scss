@@ -63,14 +63,6 @@
         border-bottom: 1px solid #eee;
     }
 
-
-
-    // li:hover .jsc-mobil-downbar,
-    // .shop-down-list:hover .jsc-mobil-downbar-shop {
-    //     display: block;
-    //     cursor: pointer;
-    // }
-
     & .jsc-mobil-downbar,
     .shop-down-list ul {
         display: none;
@@ -107,6 +99,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+
     & a {
         position: relative;
         display: inline-block;
@@ -126,7 +119,7 @@
         color: #fff;
     }
 
-    & a:hover  {
+    & a:hover {
         transition: all 0.5s ease;
         background-color: black;
     }

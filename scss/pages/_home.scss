@@ -7,15 +7,18 @@
 .jsc-hover-red:hover {
     color: color.$jsc-color-red-5d !important;
 }
+
 .jsc-slider-page {
-    height: 160vh;
+    height: 110vh;
     overflow: hidden;
     background-color: color.$jsc-bg-orange-ce;
-    #right{
+
+    #right {
         position: absolute;
         right: 0;
         top: 500px;
-        i{
+
+        i {
             background-color: #fff;
             padding: 20px;
             border-radius: 50%;
@@ -27,21 +30,23 @@
             height: 15px;
             text-align: center;
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             padding: 25px;
         }
     }
-    #left{
+
+    #left {
         position: absolute;
         top: 500px;
-        i{
+
+        i {
             background-color: #fff;
             width: 15px;
             height: 15px;
             text-align: center;
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             padding: 25px;
             border-radius: 50%;
@@ -51,35 +56,41 @@
             opacity: 0;
         }
     }
-    &:hover{
-        #left{
+
+    &:hover {
+        #left {
             left: 30px;
-            i{
+
+            i {
                 opacity: 1;
                 transition: .3s;
                 transform: translate(30px);
             }
         }
     }
-    &:hover{
-        #right{
-            i{
+
+    &:hover {
+        #right {
+            i {
                 opacity: 1;
                 transition: .3s;
                 transform: translate(-30px);
             }
         }
     }
-    .jsc-left-slider{
+
+    .jsc-left-slider {
         position: absolute;
         bottom: -80px;
         animation: textUp 3s 1s ease-out infinite;
-        .jsc-left-slider-offer-text{
-            h5{
+
+        .jsc-left-slider-offer-text {
+            h5 {
                 margin: 0;
                 font-size: 16px;
             }
-            div{
+
+            div {
                 margin-right: 15px;
                 border: none;
                 height: 3px;
@@ -87,51 +98,126 @@
                 background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
             }
         }
-        .jsc-left-slider-sale-text{
+
+        .jsc-left-slider-sale-text {
             color: color.$jsc-bg-dark-39;
-            h1{
+
+            h1 {
                 font-size: 70px;
                 font-weight: 200;
             }
-            span{
+
+            span {
                 font-size: 70px;
                 font-weight: bold;
             }
         }
+
         // .jsc-shop-btn{
-  
+
         // }
     }
 }
+
 @keyframes textUp {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(150%);
     }
-    50%{
+
+    50% {
         opacity: 0;
         transform: translateY(30%);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 
-.jsc-right-slider{
+.jsc-right-slider {
     position: relative;
     animation: textUp 3s 1s ease-out infinite;
-    .jsc-right-slider-image{
+
+    .jsc-right-slider-image {
         position: absolute;
         top: 80px;
     }
-    .jsc-right-slider-product-info{
+
+    .jsc-right-slider-product-info {
         position: absolute;
         right: 70px;
         top: 500px;
         background-color: #fff;
         border-radius: 5px;
         padding: 20px;
+    }
+}
+
+
+.jsc-banner-container {
+    padding-block: 80px;
+    & .row1 {
+        padding-bottom: 80px;
+    }
+
+    & .row2 {
+        height: 100px;
+        background-color: red;
+    }
+
+    .jsc-banner__items {
+        position: relative;
+        display: block;
+    }
+
+    .jsc-banner__image img {
+        width: 100%;
+    }
+
+    .jsc-banner__content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 60px 45px;
+
+        .title {
+            color: color.$jsc-color-gray-32;
+            font-size: 24px !important;
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+
+        .amount {
+            color: color.$jsc-color-gray-57;
+        }
+    }
+
+    .content-center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .title_center {
+            font-size: 30px;
+            margin-bottom: 19px;
+            color: color.$jsc-color-red-5d;
+            font-weight: 800;
+        }
+
+        .shop-link {
+            font-size: 18px;
+            width: max-content;
+            text-decoration: underline !important;
+            color: color.$jsc-color-gray-16;
+        }
+
     }
 }
