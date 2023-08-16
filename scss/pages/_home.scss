@@ -159,6 +159,7 @@
 
 .jsc-banner-container {
     padding-block: 80px;
+
     & .row1 {
         padding-bottom: 80px;
     }
@@ -167,14 +168,22 @@
         height: 100px;
         background-color: red;
     }
-
+    //hover start
+    .jsc-banner__items:hover{
+        overflow: hidden;
+        .jsc-banner__image img {
+            transform: scale(1.1) rotate(3deg);
+        }
+    }
+    //hover end
     .jsc-banner__items {
         position: relative;
         display: block;
-    }
 
-    .jsc-banner__image img {
-        width: 100%;
+        .jsc-banner__image img {
+            width: 100%;
+        }
+        
     }
 
     .jsc-banner__content {
@@ -193,6 +202,7 @@
             font-size: 24px !important;
             margin-bottom: 14px;
             font-weight: 700;
+            text-transform: uppercase;
         }
 
         .amount {
@@ -214,6 +224,7 @@
 
         .shop-link {
             font-size: 18px;
+            font-weight: 600;
             width: max-content;
             text-decoration: underline !important;
             color: color.$jsc-color-gray-16;
