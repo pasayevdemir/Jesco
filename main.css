@@ -88,53 +88,52 @@ ul > li {
   transition: 0.3s;
   transform: translate(-30px);
 }
-
-.jsc-slider {
+.jsc-slider-page .jsc-slider {
   height: 700px;
 }
-.jsc-slider .jsc-slider-item {
+.jsc-slider-page .jsc-slider .jsc-slider-item {
   position: absolute;
   gap: 10rem;
 }
-.jsc-slider .jsc-slider-item:not(.active) {
+.jsc-slider-page .jsc-slider .jsc-slider-item:not(.active) {
   top: 100%;
 }
-.jsc-slider .jsc-slider-item .jsc-left-slider-item {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item {
   margin-top: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text h5 {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text h5 {
   margin: 0;
   font-size: 18px;
 }
-.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text div {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text div {
   margin-right: 15px;
   border: none;
   height: 3px;
   width: 30px;
   background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
 }
-.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text {
   color: #393939;
 }
-.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text h1 {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text h1 {
   font-size: 60px;
   font-weight: 200;
 }
-.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text span {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text span {
   font-size: 60px;
   font-weight: bold;
 }
-.jsc-slider .jsc-slider-item .jsc-right-slider-item {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-right-slider-item {
   margin-top: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-image img {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-image img {
   width: 100%;
 }
-.jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-product-info {
+.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-product-info {
   position: absolute;
   right: 0;
   top: 50%;
@@ -293,8 +292,6 @@ ul > li {
   color: #848484;
 }
 
-<<<<<<< HEAD
-=======
 .jsc-products .products__row1 {
   border-bottom: 1px solid #e8e8e8;
 }
@@ -343,7 +340,6 @@ ul > li {
   background-color: blue;
 }
 
->>>>>>> samir
 .jsc-header-top {
   background-color: #242424;
 }
