@@ -7,15 +7,24 @@
 .jsc-slider-page {
     overflow: hidden;
     background-color: color.$jsc-bg-orange-ce;
+<<<<<<< HEAD
     position: relative;
 
     #right {
+=======
+   position: relative;
+    #right{
+>>>>>>> samir
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: 15px;
+<<<<<<< HEAD
 
         i {
+=======
+        i{
+>>>>>>> samir
             background-color: #fff;
             padding: 20px;
             border-radius: 50%;
@@ -37,7 +46,13 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+<<<<<<< HEAD
         i {
+=======
+        // left: 200px;
+        i{
+
+>>>>>>> samir
             background-color: #fff;
             width: 15px;
             height: 15px;
@@ -53,18 +68,26 @@
             opacity: 0;
         }
     }
+<<<<<<< HEAD
 
     &:hover {
         #left {
             left: 15px;
 
             i {
+=======
+    &:hover{
+        #left{
+            left: 15px;
+            i{
+>>>>>>> samir
 
                 opacity: 1;
                 transition: .3s;
                 transform: translate(30px);
             }
         }
+<<<<<<< HEAD
     }
 
     &:hover {
@@ -72,6 +95,13 @@
             right: 20px;
 
             i {
+=======
+    }  
+    &:hover{
+        #right{
+            right: 20px;
+            i{
+>>>>>>> samir
 
                 opacity: 1;
                 transition: .3s;
@@ -79,6 +109,7 @@
             }
         }
     }
+<<<<<<< HEAD
 
     .jsc-slider {
         height: 700px;
@@ -159,6 +190,84 @@
 
 
     100% {
+=======
+}
+    .jsc-slider{
+        height: 700px;
+    .jsc-slider-item{
+     position: absolute;
+     gap: 10rem;
+    
+     &:not(.active){
+        top: 100%;
+    }
+        .jsc-left-slider-item{
+            // margin-top: 15px;
+            // position: relative;
+            // bottom: 40rem;
+            margin-top: 15px;
+            object-fit: cover;
+            // &:not(.active){
+            //     top: 100%;
+            // }
+          
+            .jsc-left-slider-offer-text{
+                h5{
+                    margin: 0;
+                    font-size: 18px;
+                }
+                div{
+                    margin-right: 15px;
+                    border: none;
+                    height: 3px;
+                    width: 30px;
+                    background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+                }
+            }
+            .jsc-left-slider-sale-text{
+                color: color.$jsc-bg-dark-39;
+                h1{
+                    font-size: 60px;
+                    font-weight: 200;
+                }
+                span{
+                    font-size: 60px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .jsc-right-slider-item{
+            margin-top: 15px;
+            object-fit: cover;
+          
+            
+            .jsc-right-slider-image{
+               img{
+            
+                width: 100%;
+               }
+            }
+            .jsc-right-slider-product-info{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 252px;
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+            }
+        }
+    }
+}
+@keyframes next1 {
+    0%{
+        top:0;
+        opacity: 1;
+    }
+  
+
+    100%{
+>>>>>>> samir
         opacity: 0;
         top: -100%;
 
@@ -174,7 +283,10 @@
 
     100% {
         top: 0%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> samir
         opacity: 1;
     }
 }
@@ -183,6 +295,7 @@
     .jsc-slider {
         height: 870px !important;
 
+<<<<<<< HEAD
         .jsc-slider-item {
             .jsc-left-slider-item {
                 justify-content: center;
@@ -244,7 +357,67 @@
         }
     }
 
+=======
+@media (max-width: 576px)  {
+    .jsc-slider{
+        height: 870px !important;
+    .jsc-slider-item{
+           .jsc-left-slider-item{
+            justify-content: center;
+            align-items: center ;
+            gap: 15px;
+               .jsc-left-slider-offer-text{
+                   h5{
+                    font-size: 15px !important;
+                   }
+               }
+               .jsc-left-slider-sale-text{
+   
+                   h1{
+                    font-size: 30px !important;
+                   }
+                   span{
+                    font-size: 30px !important;
+                   }
+               }
+           }
+           .jsc-right-slider-item{
+               .jsc-right-slider-product-info{
+                width: 200px !important;
+               }
+           }
+       }
 }
+}
+
+@media (min-width: 576px) and  (max-width:768px){
+    .jsc-slider{
+        height: 400px !important;
+    .jsc-slider-item{
+        .jsc-left-slider-item{
+            gap: 15px   ;
+            .jsc-left-slider-offer-text{
+                h5{
+                 font-size: 10px !important;
+                }
+            }
+            .jsc-left-slider-sale-text{
+
+                h1{
+                 font-size: 28px !important;
+                }
+                span{
+                 font-size: 28px !important;
+                }
+            }
+        }
+    }
+>>>>>>> samir
+}
+
+}
+
+
 
 //-----------------------------------
 
@@ -373,4 +546,92 @@
 
 // Feature section end -->
 
+<<<<<<< HEAD
 //-----------------------------------
+=======
+//-----------------------------------
+
+
+// Product section start -->
+
+.jsc-products {
+
+    // produuct nav bar area start
+    .products__row1 {
+        border-bottom: 1px solid #e8e8e8;
+
+        .product-nav-title {
+            .title {
+                font-size: 36px;
+                font-weight: 800;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: color.$jsc-bg-orange-grad;
+            }
+        }
+
+        .tablist {
+            .nav {
+                .nav-item {
+                    .nav-link {
+                        padding-inline: 25px;
+
+                        span {
+                            color: #A7A7A7;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    &:hover .nav-link,
+                    .active {
+                        color: color.$jsc-color-red-5d !important;
+
+                        span {
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                border: 1px solid color.$jsc-color-red-5d;
+                                bottom: -20px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .active {
+                color: color.$jsc-color-red-5d !important;
+            }
+
+            .nav-item:last-child .nav-link {
+                padding-right: 0;
+            }
+        }
+    }
+    // produuct nav bar area end
+
+    //-----------------------------------------------------------------
+
+    // produuct cards area start
+    .products__row2 {
+
+        .product-col{
+            // margin-right: 20px;
+            border: 1px slid red;
+            height: 250px;
+            background-color: blue;
+        }
+        // .product-col:nth-child(3n){
+        //     margin-right: 0 !important;
+        // }
+    }
+
+    // produuct cards area end
+}
+
+// Product section end -->
+>>>>>>> samir

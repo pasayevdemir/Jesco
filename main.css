@@ -88,52 +88,53 @@ ul > li {
   transition: 0.3s;
   transform: translate(-30px);
 }
-.jsc-slider-page .jsc-slider {
+
+.jsc-slider {
   height: 700px;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item {
+.jsc-slider .jsc-slider-item {
   position: absolute;
   gap: 10rem;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item:not(.active) {
+.jsc-slider .jsc-slider-item:not(.active) {
   top: 100%;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item {
+.jsc-slider .jsc-slider-item .jsc-left-slider-item {
   margin-top: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text h5 {
+.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text h5 {
   margin: 0;
   font-size: 18px;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text div {
+.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-offer-text div {
   margin-right: 15px;
   border: none;
   height: 3px;
   width: 30px;
   background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text {
+.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text {
   color: #393939;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text h1 {
+.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text h1 {
   font-size: 60px;
   font-weight: 200;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text span {
+.jsc-slider .jsc-slider-item .jsc-left-slider-item .jsc-left-slider-sale-text span {
   font-size: 60px;
   font-weight: bold;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-right-slider-item {
+.jsc-slider .jsc-slider-item .jsc-right-slider-item {
   margin-top: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-image img {
+.jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-image img {
   width: 100%;
 }
-.jsc-slider-page .jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-product-info {
+.jsc-slider .jsc-slider-item .jsc-right-slider-item .jsc-right-slider-product-info {
   position: absolute;
   right: 0;
   top: 50%;
@@ -292,6 +293,57 @@ ul > li {
   color: #848484;
 }
 
+<<<<<<< HEAD
+=======
+.jsc-products .products__row1 {
+  border-bottom: 1px solid #e8e8e8;
+}
+.jsc-products .products__row1 .product-nav-title .title {
+  font-size: 36px;
+  font-weight: 800;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+}
+.jsc-products .products__row1 .tablist .nav .nav-item .nav-link {
+  padding-inline: 25px;
+}
+.jsc-products .products__row1 .tablist .nav .nav-item .nav-link span {
+  color: #A7A7A7;
+  font-size: 18px;
+  font-weight: bold;
+}
+.jsc-products .products__row1 .tablist .nav .nav-item:hover .nav-link,
+.jsc-products .products__row1 .tablist .nav .nav-item .active {
+  color: #fb5d5d !important;
+}
+.jsc-products .products__row1 .tablist .nav .nav-item:hover .nav-link span,
+.jsc-products .products__row1 .tablist .nav .nav-item .active span {
+  position: relative;
+}
+.jsc-products .products__row1 .tablist .nav .nav-item:hover .nav-link span::after,
+.jsc-products .products__row1 .tablist .nav .nav-item .active span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid #fb5d5d;
+  bottom: -20px;
+  left: 0;
+}
+.jsc-products .products__row1 .tablist .active {
+  color: #fb5d5d !important;
+}
+.jsc-products .products__row1 .tablist .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+.jsc-products .products__row2 .product-col {
+  border: 1px slid red;
+  height: 250px;
+  background-color: blue;
+}
+
+>>>>>>> samir
 .jsc-header-top {
   background-color: #242424;
 }
@@ -460,12 +512,22 @@ ul > li {
   width: 100%;
 }
 
+.body-blocked {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  height: 10px;
+  width: 100%;
+  height: 100vh;
+  z-index: -777;
+}
+
 .jsc-sidenav-mobil {
   position: fixed;
   left: -400px;
   width: 350px;
   height: 100vh;
-  z-index: 2;
+  z-index: 7;
   padding: 50px 30px;
   background-color: #fff;
   overflow-y: scroll;
@@ -479,10 +541,11 @@ ul > li {
 }
 .jsc-sidenav-mobil .plus-icon > a::after,
 .jsc-sidenav-mobil .plus-icon > span::after {
-  content: "\e618";
-  font-family: "Pe-icon-7-stroke";
-  font-style: normal;
+  content: "+";
   color: #4c4c4c;
+}
+.jsc-sidenav-mobil .active-minus::after {
+  content: "_" !important;
 }
 .jsc-sidenav-mobil a {
   display: flex;
@@ -614,6 +677,9 @@ ul > li {
   .jsc-banner-container .content-center .shop-link {
     font-size: 16px;
   }
+  .row-feature-card {
+    row-gap: 30px;
+  }
 }
 @media (max-width: 768px) {
   .jsc-banner-container .row {
@@ -623,11 +689,23 @@ ul > li {
     min-width: 100% !important;
     padding-bottom: 30px;
   }
+  .jsc-products .product-nav-title .title {
+    font-size: 30px;
+  }
+  .jsc-products .product-nav .nav {
+    margin-bottom: 9px;
+  }
+  .jsc-products .product-nav .nav-item:first-child a {
+    padding-left: 0 !important;
+  }
 }
 @media (max-width: 576px) {
   .jsc-icon::before {
     font-size: 22px !important;
     margin-left: 10px;
+  }
+  .product-nav .nav-item .nav-link {
+    padding-inline: 15px !important;
   }
 }
 @media (max-width: 425px) {
@@ -637,6 +715,37 @@ ul > li {
   }
   .jsc-sidenav-mobil {
     width: 300px;
+  }
+  .product-nav .nav-item .nav-link {
+    padding-inline: 12.5px !important;
+  }
+  .product-nav .nav-item .nav-link span {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 360px) {
+  .jsc-header-actions .login {
+    margin: 0 !important;
+  }
+  .feature-cards {
+    padding: 10px !important;
+  }
+  .feature-cards img {
+    scale: 0.8;
+  }
+  .cards-image {
+    margin-right: 15px !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .jsc-products .product-nav-title .title {
+    font-size: 26px;
+  }
+  .jsc-products .product-nav .nav-item .nav-link {
+    padding-inline: 10px !important;
+  }
+  .jsc-products .product-nav .nav-item .nav-link span {
+    font-size: 14px !important;
   }
 }
 .jsc-section-carousel {
