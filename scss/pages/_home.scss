@@ -256,7 +256,8 @@
             width: 70px;
             height: 70px;
             margin-right: 20px;
-            img{
+
+            img {
                 transition: all 0.25s ease;
             }
         }
@@ -283,3 +284,87 @@
 // Feature section end -->
 
 //-----------------------------------
+
+
+// Product section start -->
+
+.jsc-products {
+
+    // produuct nav bar area start
+    .products__row1 {
+        border-bottom: 1px solid #e8e8e8;
+
+        .product-nav-title {
+            .title {
+                font-size: 36px;
+                font-weight: 800;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: color.$jsc-bg-orange-grad;
+            }
+        }
+
+        .tablist {
+            .nav {
+                .nav-item {
+                    .nav-link {
+                        padding-inline: 25px;
+
+                        span {
+                            color: #A7A7A7;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    &:hover .nav-link,
+                    .active {
+                        color: color.$jsc-color-red-5d !important;
+
+                        span {
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                border: 1px solid color.$jsc-color-red-5d;
+                                bottom: -20px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .active {
+                color: color.$jsc-color-red-5d !important;
+            }
+
+            .nav-item:last-child .nav-link {
+                padding-right: 0;
+            }
+        }
+    }
+    // produuct nav bar area end
+
+    //-----------------------------------------------------------------
+
+    // produuct cards area start
+    .products__row2 {
+
+        .product-col{
+            // margin-right: 20px;
+            border: 1px slid red;
+            height: 250px;
+            background-color: blue;
+        }
+        // .product-col:nth-child(3n){
+        //     margin-right: 0 !important;
+        // }
+    }
+
+    // produuct cards area end
+}
+
+// Product section end -->

@@ -91,11 +91,13 @@ function mobilBarOpen() {
     mobilBar.style.left = "0px";
     document.querySelector("body").style.overflow = "hidden";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.querySelector(".body-blocked").style.zIndex= "6";
 }
 function mobilBarClose() {
     mobilBar.style.left = "-400px";
     document.querySelector("body").style.overflow = "auto";
     document.body.style.backgroundColor = "white";
+    document.querySelector(".body-blocked").style.zIndex= "-777";
 }
 
 
