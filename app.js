@@ -20,6 +20,7 @@ let counter = 0;
 
 
 nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
 
 function nextSlide() {
     sliderItem[counter].style.animation = "next1 1s ease-in forwards";
@@ -30,20 +31,17 @@ function nextSlide() {
         counter++; 
     }
     sliderItem[counter].style.animation = "next2 1s ease-in forwards";
-
- 
 }
-
-// nextSlide = () =>{
-//     this.move += 640;
-//        if(this.move >= 640 * Array.from(this.images).length){
-//         this.move=0;
-//        }
-//         Array.from(this.images).forEach(x => {
-//             x.style.left = -this.move + "px"
-//         })
-//         console.log( this.move);
-//    }
+function prevSlide() {
+    sliderItem[counter].style.animation = "next2 1s ease-in forwards";
+    if(counter == 0){
+        counter= sliderItem.length-1; 
+    }
+    else{
+        counter--; 
+    }
+    sliderItem[counter].style.animation = "next1 1s ease-in forwards";
+}
 
 
 

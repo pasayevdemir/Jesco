@@ -84,7 +84,7 @@
 
 
     .jsc-slider{
-        height: 800px;
+        height: 700px;
     .jsc-slider-item{
      position: absolute;
      gap: 10rem;
@@ -134,7 +134,7 @@
             
             .jsc-right-slider-image{
                img{
-                height: 100%;
+            
                 width: 100%;
                }
             }
@@ -180,9 +180,9 @@
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 576px)  {
     .jsc-slider{
-        height: 675px !important;
+        height: 870px !important;
     .jsc-slider-item{
            .jsc-left-slider-item{
             justify-content: center;
@@ -219,9 +219,9 @@
 }
 }
 
-@media (max-width:991px) {
+@media (min-width: 576px) and  (max-width:768px){
     .jsc-slider{
-        
+        height: 400px !important;
     .jsc-slider-item{
         .jsc-left-slider-item{
             gap: 15px   ;
