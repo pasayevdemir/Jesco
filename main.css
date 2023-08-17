@@ -419,10 +419,11 @@ ul > li {
 }
 .jsc-sidenav-mobil .plus-icon > a::after,
 .jsc-sidenav-mobil .plus-icon > span::after {
-  content: "\e618";
-  font-family: "Pe-icon-7-stroke";
-  font-style: normal;
+  content: "+";
   color: #4c4c4c;
+}
+.jsc-sidenav-mobil .active-minus::after {
+  content: "_" !important;
 }
 .jsc-sidenav-mobil a {
   display: flex;

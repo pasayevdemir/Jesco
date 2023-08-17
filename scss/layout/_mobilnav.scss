@@ -20,13 +20,12 @@
 
     .plus-icon>a::after,
     .plus-icon>span::after {
-        content: '\e618';
-        font-family: 'Pe-icon-7-stroke';
-        font-style: normal;
+        content: '\+';
         color: color.$jsc-color-gray-4c;
-
     }
-
+    .active-minus::after{
+        content: '\_' !important;
+    }   
     a {
         display: flex;
 
