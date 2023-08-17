@@ -2,20 +2,22 @@
 @use '../abstarcts/_variables' as color;
 
 .jsc-navbar {
-    >ul>li:not(:first-child){
+    >ul>li:not(:first-child) {
         margin-left: 50px;
     }
 
-    > ul {
+    >ul {
         justify-content: center;
         display: flex;
         margin: 0;
         padding: 0;
-        > li {
+
+        >li {
             width: max-content;
             display: flex;
             align-items: center;
-            > a {
+
+            >a {
                 font-size: 14px;
                 text-transform: uppercase;
                 line-height: 99px;
@@ -25,7 +27,7 @@
         }
 
         .jsc-dropdown-li {
-           > a::after {
+            >a::after {
                 content: '\e688';
                 font-family: 'Pe-icon-7-stroke';
                 font-style: normal;
@@ -36,47 +38,3 @@
 }
 
 
-@media (max-width: 992px) {
-    #navbarId {
-        display: none !important;
-    }
-
-    #stickyBar{
-        padding-block: 15px;
-        & .row {
-            justify-content: space-between !important;
-        }
-    }
-    
-    .jsc-icon-menu{
-        display: inline-block !important;
-    }
-
-
-    .jsc-header{
-        position: relative;
-    }
-
-    // .jsc-sidenav-mobil{
-    //     left: 0px !important;
-    // }
-    
-}
-
-@media (max-width: 576px){
-    .jsc-icon::before{
-        font-size: 22px !important;
-        margin-left: 10px;
-    }
-}
-
-@media (max-width: 425px){
-    #stickyBar .row {
-        flex-direction: column;
-        row-gap: 5px;
-    }
-    
-    .jsc-sidenav-mobil{
-        width: 300px;
-    }
-}

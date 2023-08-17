@@ -1,22 +1,21 @@
 @use '../abstarcts/_variables' as color;
 
-// body {
-//     height: 1250vh;
-// }
-
 .jsc-hover-red:hover {
     color: color.$jsc-color-red-5d !important;
 }
+
 .jsc-slider-page {
     overflow: hidden;
     background-color: color.$jsc-bg-orange-ce;
-   position: relative;
-    #right{
+    position: relative;
+
+    #right {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: 15px;
-        i{
+
+        i {
             background-color: #fff;
             padding: 20px;
             border-radius: 50%;
@@ -28,23 +27,23 @@
             height: 15px;
             text-align: center;
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             padding: 25px;
         }
     }
-    #left{
+
+    #left {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        // left: 200px;
-        i{
+        i {
             background-color: #fff;
             width: 15px;
             height: 15px;
             text-align: center;
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             padding: 25px;
             border-radius: 50%;
@@ -54,20 +53,26 @@
             opacity: 0;
         }
     }
-    &:hover{
-        #left{
+
+    &:hover {
+        #left {
             left: 15px;
-            i{
+
+            i {
+
                 opacity: 1;
                 transition: .3s;
                 transform: translate(30px);
             }
         }
     }
-    &:hover{
-        #right{
+
+    &:hover {
+        #right {
             right: 20px;
-            i{
+
+            i {
+
                 opacity: 1;
                 transition: .3s;
                 transform: translate(-30px);
@@ -75,186 +80,297 @@
         }
     }
 
-
-    // <div class="jsc-slider d-flex flex-column ">
-
-    // <div class="jsc-slider-item d-flex justify-content-between">
-    //     <div class="jsc-left-slider-item d-flex flex-column justify-content-center">
-    //         <div class="jsc-left-slider-offer-text d-flex align-items-center">
-
-
-    .jsc-slider{
+    .jsc-slider {
         height: 700px;
-    .jsc-slider-item{
-     position: absolute;
-     gap: 10rem;
-    
-     &:not(.active){
-        top: 100%;
-    }
-        .jsc-left-slider-item{
-            // margin-top: 15px;
-            // position: relative;
-            // bottom: 40rem;
-            margin-top: 15px;
-            object-fit: cover;
-            // &:not(.active){
-            //     top: 100%;
-            // }
-          
-            .jsc-left-slider-offer-text{
-                h5{
-                    margin: 0;
-                    font-size: 18px;
+
+        .jsc-slider-item {
+            position: absolute;
+            gap: 10rem;
+
+            &:not(.active) {
+                top: 100%;
+            }
+
+            .jsc-left-slider-item {
+                margin-top: 15px;
+                object-fit: cover;
+
+                .jsc-left-slider-offer-text {
+                    h5 {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+
+                    div {
+                        margin-right: 15px;
+                        border: none;
+                        height: 3px;
+                        width: 30px;
+                        background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+                    }
                 }
-                div{
-                    margin-right: 15px;
-                    border: none;
-                    height: 3px;
-                    width: 30px;
-                    background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+
+                .jsc-left-slider-sale-text {
+                    color: color.$jsc-bg-dark-39;
+
+                    h1 {
+                        font-size: 60px;
+                        font-weight: 200;
+                    }
+
+                    span {
+                        font-size: 60px;
+                        font-weight: bold;
+                    }
                 }
             }
-            .jsc-left-slider-sale-text{
-                color: color.$jsc-bg-dark-39;
-                h1{
-                    font-size: 60px;
-                    font-weight: 200;
+
+            .jsc-right-slider-item {
+                margin-top: 15px;
+                object-fit: cover;
+
+
+                .jsc-right-slider-image {
+                    img {
+
+                        width: 100%;
+                    }
                 }
-                span{
-                    font-size: 60px;
-                    font-weight: bold;
+
+                .jsc-right-slider-product-info {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 252px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    padding: 20px;
                 }
-            }
-        }
-        .jsc-right-slider-item{
-            margin-top: 15px;
-            object-fit: cover;
-          
-            
-            .jsc-right-slider-image{
-               img{
-            
-                width: 100%;
-               }
-            }
-            .jsc-right-slider-product-info{
-                position: absolute;
-                right: 0;
-                top: 50%;
-                width: 252px;
-                background-color: #fff;
-                border-radius: 5px;
-                padding: 20px;
             }
         }
     }
 }
-}
+
 @keyframes next1 {
-    0%{
-        top:0;
+    0% {
+        top: 0;
         opacity: 1;
     }
-  
 
-    100%{
+
+    100% {
         opacity: 0;
         top: -100%;
-      
+
     }
 }
+
 @keyframes next2 {
-    0%{
-        top:100%;
+    0% {
+        top: 100%;
         opacity: 0;
     }
-  
 
-    100%{
+
+    100% {
         top: 0%;
+
         opacity: 1;
     }
 }
 
-
-
-
-@media (max-width: 576px)  {
-    .jsc-slider{
+@media (max-width: 576px) {
+    .jsc-slider {
         height: 870px !important;
-    .jsc-slider-item{
-           .jsc-left-slider-item{
-            justify-content: center;
-            align-items: center ;
-            gap: 15px;
-               .jsc-left-slider-offer-text{
-                   h5{
-                    font-size: 15px !important;
-                   }
-               }
-               .jsc-left-slider-sale-text{
-   
-                   h1{
-                    font-size: 30px !important;
-                   }
-                   span{
-                    font-size: 30px !important;
-                   }
-               }
-           }
-           .jsc-right-slider-item{
-        
-               
-               .jsc-right-slider-image{
-                  img{
-               
-                  }
-               }
-               .jsc-right-slider-product-info{
-                width: 200px !important;
-               }
-           }
-       }
-}
-}
 
-@media (min-width: 576px) and  (max-width:768px){
-    .jsc-slider{
-        height: 400px !important;
-    .jsc-slider-item{
-        .jsc-left-slider-item{
-            gap: 15px   ;
-            .jsc-left-slider-offer-text{
-                h5{
-                 font-size: 10px !important;
-                }
-            }
-            .jsc-left-slider-sale-text{
+        .jsc-slider-item {
+            .jsc-left-slider-item {
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
 
-                h1{
-                 font-size: 28px !important;
+                .jsc-left-slider-offer-text {
+                    h5 {
+                        font-size: 15px !important;
+                    }
                 }
-                span{
-                 font-size: 28px !important;
+
+                .jsc-left-slider-sale-text {
+
+                    h1 {
+                        font-size: 30px !important;
+                    }
+
+                    span {
+                        font-size: 30px !important;
+                    }
                 }
             }
-        }
-        .jsc-right-slider-item{
-     
-            
-            .jsc-right-slider-image{
-               img{
-            
-               }
-            }
-            .jsc-right-slider-product-info{
-                
+
+            .jsc-right-slider-item {
+                .jsc-right-slider-product-info {
+                    width: 200px !important;
+                }
             }
         }
     }
 }
 
+@media (min-width: 576px) and (max-width:768px) {
+    .jsc-slider {
+        height: 400px !important;
+
+        .jsc-slider-item {
+            .jsc-left-slider-item {
+                gap: 15px;
+
+                .jsc-left-slider-offer-text {
+                    h5 {
+                        font-size: 10px !important;
+                    }
+                }
+
+                .jsc-left-slider-sale-text {
+
+                    h1 {
+                        font-size: 28px !important;
+                    }
+
+                    span {
+                        font-size: 28px !important;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
+//-----------------------------------
 
+// Banner section start -->
+
+.jsc-banner-container {
+    padding-block: 80px;
+
+    //hover start
+    .jsc-banner__items:hover {
+        overflow: hidden;
+
+        .jsc-banner__image img {
+            transform: scale(1.1) rotate(3deg);
+        }
+    }
+
+    //hover end
+    .jsc-banner__items {
+        position: relative;
+        display: block;
+
+        .jsc-banner__image img {
+            width: 100%;
+        }
+
+    }
+
+    .jsc-banner__content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 60px 45px;
+
+        .title {
+            color: color.$jsc-color-gray-32;
+            font-size: 24px !important;
+            margin-bottom: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .amount {
+            color: color.$jsc-color-gray-57;
+        }
+    }
+
+    .content-center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .title_center {
+            font-size: 30px;
+            margin-bottom: 19px;
+            color: color.$jsc-color-red-5d;
+            font-weight: 800;
+        }
+
+        .shop-link {
+            font-size: 18px;
+            font-weight: 600;
+            width: max-content;
+            text-decoration: underline !important;
+            color: color.$jsc-color-gray-16;
+        }
+
+    }
+}
+
+// Banner section end -->
+
+//-----------------------------------
+
+// Feature section start -->
+
+.jsc-feature-content {
+    padding-bottom: 80px;
+
+    .feature-cards {
+        border: 1px solid #e8e8e8;
+        padding: 30px;
+    }
+
+    .feature-cards-content {
+        display: flex;
+
+        .cards-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background: color.$jsc-bg-orange-grad;
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+
+            img {
+                transition: all 0.25s ease;
+            }
+        }
+
+        //hover
+        .cards-image:hover {
+            img {
+                transform: scale(0.9);
+            }
+        }
+
+        .cars-content {
+            h4 {
+                color: color.$jsc-color-gray-2e;
+            }
+
+            span {
+                color: color.$jsc-color-gray-84;
+            }
+        }
+    }
+}
+
+// Feature section end -->
+
+//-----------------------------------

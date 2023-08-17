@@ -1,8 +1,7 @@
-
 //mobil close button
 @use '../abstarcts/_variables' as color;
 
-.jsc-mobil{
+.jsc-mobil {
     &__btn-close {
         position: absolute;
         top: -5px;
@@ -19,20 +18,23 @@
         font-style: normal;
     }
 }
-.jsc-shop-button{
+
+.jsc-shop-button {
     padding: 20px 40px;
-    border:none;
+    border: none;
     border-radius: 50px;
-    background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+    background: color.$jsc-bg-orange-grad;
     width: max-content;
     color: #FFF;
     cursor: pointer;
     transition: .3s;
-    span{
+
+    span {
         margin-right: 10px;
         font-weight: bold;
     }
-    &:hover{
-        box-shadow: 0px 17px 72px -15px rgba(0,0,0,0.75);
+
+    &:hover {
+        box-shadow: 0px 17px 72px -15px rgba(0, 0, 0, 0.75);
     }
 }
